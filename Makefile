@@ -10,5 +10,8 @@ install: brclock
 	mkdir -p $(DESTDIR)$(PREFIX)/bin/
 	cp -f $(NAME) $(DESTDIR)$(PREFIX)/bin/
 
+uninstall:
+	rm $(DESTDIR)$(PREFIX)/bin/$(NAME)
+
 clean:
 	rm $(NAME)
